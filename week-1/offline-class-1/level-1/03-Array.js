@@ -57,6 +57,7 @@ function forEachExample(arr) {
   arr.forEach(function(item, index) {
     console.log(item, index);
   });
+  // use the callback function for each value in array
 }
 forEachExample([1, 2, 3]);
 
