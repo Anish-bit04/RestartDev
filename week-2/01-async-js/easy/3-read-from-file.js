@@ -27,6 +27,8 @@
 
 const fs = require('fs');
 
+const filePath = './file.md';
+
 // Function to read file contents and print to console
 const readFileAndPrint = (filePath) => {
   // Reading file asynchronously
@@ -49,7 +51,7 @@ const readFileAndPrint = (filePath) => {
 const performExpensiveOperation = () => {
   // Simulating an expensive operation with a loop and delay
   for (let i = 0; i < 5; i++) {
-    console.log(`Expensive operation step ${i + 1}`);
+    console.log(`Expensive operation step ${i }`);
     // Simulating a delay of 1 second
     delay(1000);
   }
@@ -61,5 +63,4 @@ const performExpensiveOperation = () => {
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 // Example usage: Provide the path to the file you want to read
-const filePath = './4-write-to-file.md';
 readFileAndPrint(filePath);
